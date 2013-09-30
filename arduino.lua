@@ -54,6 +54,9 @@ end
 ArduinoConstants = readonlytable {
     INPUT = 0,
     OUTPUT = 1,
+    ANALOG = 2,
+    PWM = 3,
+    SERVO = 4,
     LOW = 0,
     HIGH = 1,
     MAX_DATA_BYTES = 32,
