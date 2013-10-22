@@ -17,7 +17,7 @@ sched:AddRoutine(function()
                 local cur = 0
                 local status = false
                 while true do
-                    -- on carambola:
+                    -- on OpenWRT (Carambola, Arduino Yun...):
                     -- cur = posix.gettimeofday()
                     cur = posix.gettimeofday()["sec"]
                     if cur % 2 == 0 and cur ~= last then
