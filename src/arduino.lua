@@ -177,7 +177,7 @@ function Arduino(port_name)
     function self.processInput()
         local command
         local read_len = 1 -- read one byte
-        local timeout = 10 -- in miliseconds
+        local timeout = 10 -- in milliseconds
         local err, inputString, size = p:read(read_len, timeout)
         local inputData = 0
         assert(err == rs232.RS232_ERR_NOERROR or err == rs232.RS232_ERR_TIMEOUT)
