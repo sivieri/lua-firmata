@@ -127,7 +127,8 @@ function Arduino(port_name)
 
     -- functions
     function self.digitalRead(pin)
-        return bit.band((bit.rshift(digitalInputData[bit.rshift(pin, 3)], (bit.band(pin, 0x07)))), 0x01)
+        -- return bit.band((bit.rshift(digitalInputData[bit.rshift(pin, 3)], (bit.band(pin, 0x07)))), 0x01)
+        return digitalInputData[pin]
     end
     
     function self.analogRead(pin)
